@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nikke and Genshin Gacha">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Goddess of Victory: Nikke + Genshin Impact Pull Simulator</title>
+</head>
+
+<body>
+<!--Navigational test to see how to navigate other links, and on the same page-->
+    <nav>
+        <a href="#">About Us</a>
+        <a href="#">Socials</a>
+    </nav>
+    
+<!--The two banners used to navigate to the pull sites (will need to set those up at a later point)-->
+    <img src="images/genshin-impact-left.jpg" alt="Genshin Impact banner">
+    <img src="images/nikke-right.jpg" alt="Goddess of Victory: Nikke banner">
+
+    <input type="button" value="Coming soon..." id="genshin-button" src="src/">
+    <input type="button" value="Coming soon..." id="nikke-button" src="src/">
+
+<!--Introduction to the site/About Us page-->
+    <h2>
+        About Us
+    </h2>
+        <p>
+            This is my first solo website for two games that I have a lot of passion for, and thought it'd be a fun project to work on to learn what I've been studying with HTML, CSS, and Javascript. This is from about 3 months of experience mostly studying through apps/online, and does borrow some inspiration off other sites. <!--(add links when setting up the pull site)--> I hope you enjoy the experience, and any feedback will be appreciated! I don't plan on making many websites, but this will be used to experiment with API's, and other modules for back-end projects that will be coming later.
+        </p>
+
+
+<!--So far seems like adding this above objects needing JS is good (might need to look into how javascript loads objects more in-depth)-->
+    <script src="index.js"></script>
+    <!--Good way to add audio, may need to figure out a system for a volume button-->
+
+    <audio id="audio1" autoplay loop onloadeddata="setHalfVolume()">
+        <source src="audio/genshin bgm.mp3"
+            type="audio/mp3">
+    </audio>
+</body>
+</html>
+
+<!--https://wishsimulator.app/, https://github.com/Mantan21/Genshin-Impact-Wish-Simulator#pity-system for references for Genshin pulling-->
+<!--https://iziz.netlify.app/z/nikke/ for Nikke site (will add animations but use ^ for references)-->

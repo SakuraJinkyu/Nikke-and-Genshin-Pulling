@@ -1,0 +1,11 @@
+body {
+    max-width: 3840px;
+    max-height: 2160px;
+    
+}
+
+img {
+    height: auto;
+    width: 900px;
+    border-color: black;
+}
