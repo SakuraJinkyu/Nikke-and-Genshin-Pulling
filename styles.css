@@ -1,11 +1,49 @@
+* {
+    box-sizing: border-box; /* ignores borders for width calc */
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
 body {
     max-width: 3840px;
     max-height: 2160px;
     
 }
 
+/* Images + their ID's (#genshin for left side, #nikke for right header) */
+
 img {
     height: auto;
-    width: 900px;
-    border-color: black;
+    width: 50%;
+    float: left;
+}
+
+#genshin-header {
+    color: aliceblue; /* Might change color later after moving */
+}
+
+#genshin-img {
+    height: auto;
+    width: 50%;
+}
+
+#nikke-header {
+    color: crimson;
+}
+
+#nikke-img {
+    height: auto;
+    width: 50%;
+}
+
+/* For the top navigation (will attempt to match the bg of both pictures if possible); Try to maybe add a volume control on the top right? */
+nav {
+    height: auto;
+    width: 100%;
+    border: 0px solid black;
+    color: #F8F8FF; /* White */
+    
 }
