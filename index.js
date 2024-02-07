@@ -2,5 +2,7 @@
 
 function setHalfVolume() {
     var myAudio = document.getElementById("audio1");  
-    myAudio.volume = 0.2; //Changed this to 0.5 or 50% volume since the function is called Set Half Volume ;)
+    myAudio.volume = 0.1;
 }
+
+// Set a onclick function for the two Nav's (current plan, change color to blue, and add a hover)
