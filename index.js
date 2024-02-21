@@ -6,9 +6,8 @@ function setHalfVolume() {
 }
 
 
-// Set a onclick function for the two Nav's (current plan, change color to blue, and add a hover)
-
+// Learn more about Javascript/autoplay rules; For now, good solution in Chrome (may need to test Firefox and Edge as well)
 function playMusic() {
     var genshinbgm = document.getElementById("audio1");
-    audio1.play();
+    genshinbgm.muted = !genshinbgm.muted;
 }
