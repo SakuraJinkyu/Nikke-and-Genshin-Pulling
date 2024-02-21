@@ -3,7 +3,6 @@
 }
 
 html {
-    box-sizing: border-box;
     scroll-behavior: smooth;
   }
 
@@ -13,16 +12,30 @@ body {
     
 }
 
-/* Images + their ID's (#genshin for left side, #nikke for right header) */
+/* Images + their ID's (#genshin for left side, #nikke for right header); Look at making similar codes into classes instead */
 
 img {
-    height: auto;
+    height: 30%;
     width: 50%;
     float: left;
 }
 
 #genshin-header {
-    color: aliceblue; /* Might change color later after moving */
+    color: #f0f8ff; /* Alice Blue */
+    position: absolute;
+    top: 35%;
+    right: 50%;
+    font-size: 50px; 
+    text-align: center;
+    
+}
+
+#genshin-header:hover {
+    color: #00325e /* Dark aliceblue */
+}
+
+#genshin-header:active {
+    color: #0063b9 /* Light-dark aliceblue */
 }
 
 #genshin-img {
@@ -31,7 +44,19 @@ img {
 }
 
 #nikke-header {
-    color: crimson;
+    color: #dc143c; /* Crimson */
+    position: absolute;
+    top: 35%; 
+    font-size: 50px; 
+    text-align: center;
+}
+
+#nikke-header:hover {
+    color: #3a000c /* Dark crimson */
+}
+
+#nikke-header:active {
+    color: #8f001d /* Light-dark crimson */
 }
 
 #nikke-img {
@@ -39,7 +64,33 @@ img {
     width: 50%;
 }
 
-/* For the top navigation (will attempt to match the bg of both pictures if possible); Try to maybe add a volume control on the top right? */
+#github-dark {
+    height: 10%;
+    width: 5%;
+}
+
+
+/* Move nav + audio button inside of header */
+.nav-header {
+    position: relative;
+    display: inline-block;
+  }
+  
+.nav-header img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+#button-audio {
+    position: absolute; 
+    left: 1%;
+    top: 1%;
+    font-size: 10px; 
+    text-align: center;
+}
+
+/* For the top navigation (will attempt to match the bg of both pictures if possible) */
 nav {
     height: auto;
     width: 100%;
@@ -47,3 +98,6 @@ nav {
     color: #F8F8FF; /* White */
     
 }
+
+
+/*  */
