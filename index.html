@@ -13,7 +13,7 @@
 <!-- Navigational test to see how to navigate other links, and on the same page-->
     <nav>
         <div class="nav-header">
-            <a href="#" id="genshin-header">About Us</a>
+            <a href="#about-us" id="genshin-header">About Us</a>
                 <img src="images/genshin-header-resized.jpg" id="genshin-img">
             <a href="#" id="nikke-header">Socials</a>
                 <img src="images/nikke-header-resized.jpg" id="nikke-img">
@@ -21,7 +21,7 @@
     </nav>
 
     <!--Updated to start muted, and added JS to toggle mute -->
-    <input type="button" value="Toggle BGM" id="button-audio" onclick="playMusic()">
+    <button id="button-audio" onclick="playMusic()">Toggle BGM</button>
     <audio id="audio1" autoplay loop muted onloadeddata="setHalfVolume()">
         <source src="audio/genshin-bgm.mp3"
             type="audio/mp3">
@@ -34,15 +34,17 @@
     <input type="button" value="Coming soon..." id="genshin-button" src="src/">
     <input type="button" value="Coming soon..." id="nikke-button" src="src/">
 
-<!-- Introduction to the site/About Us page-->
+<!-- Introduction to the site/About Us page (project start Jan, 2024) -->
     <h2>
+        <a name="about-us">
         About Us
+        </a>
     </h2>
         <p>
-            This is my first solo website for two games that I have a lot of passion for, and thought it'd be a fun project to work on to learn what I've been studying with HTML, CSS, and Javascript. This is from about 3 months of experience mostly studying through apps/online, and does borrow some inspiration off other sites. <!--(add links when setting up the pull site)--> I hope you enjoy the experience, and any feedback will be appreciated! I don't plan on making many websites, but this will be used to experiment with API's, and other modules for back-end projects that will be coming later.
+            This is my first solo website for two games that I have a lot of passion for, and thought it'd be a fun project to work on to learn what I've been studying with HTML, CSS, and Javascript. This is from about 3 months of experience mostly studying through apps/online, and does borrow some inspiration off other sites. <!--(add links when setting up the pull site)--> I hope you enjoy the experience, and any feedback will be appreciated! I don't plan on making many websites, but this will be used to experiment with API's, and other modules for back-end projects that will be coming later. 
         </p>
 
-<!-- Add link to Github, possibly other socials if needed? -->
+<!-- Potentially figure out how to do a light/dark mode switch for the logo -->
     <a href="https://github.com/SakuraJinkyu/Nikke-and-Genshin-Pulling">
         <img id="github-dark" src="images/Github-dark-mode.jpg">
     </a>
