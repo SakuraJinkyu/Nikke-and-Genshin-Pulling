@@ -14,22 +14,22 @@
     <nav>
         <div class="nav-header">
             <a href="#about-us" id="genshin-header">About Us</a>
-                <img src="images/genshin-header-resized.jpg" id="genshin-img">
-            <a href="#" id="nikke-header">Socials</a>
-                <img src="images/nikke-header-resized.jpg" id="nikke-img">
+                <img src="images/genshin-header-resized.jpg" alt="Genshin Impact header" id="genshin-header-img">
+            <a href="#socials" id="nikke-header">Socials</a>
+                <img src="images/nikke-header-resized.jpg" alt="Goddess of Victory: Nikke banner" id="nikke-header-img">
         </div>
     </nav>
 
     <!--Updated to start muted, and added JS to toggle mute -->
-    <button id="button-audio" onclick="playMusic()">Toggle BGM</button>
-    <audio id="audio1" autoplay loop muted onloadeddata="setHalfVolume()">
+    <button type="button" id="button-audio" onClick="toggleBGM()">Toggle BGM</button>
+    <audio id="audio1" loop onloadeddata="setHalfVolume()">
         <source src="audio/genshin-bgm.mp3"
             type="audio/mp3">
     </audio>
     
 <!-- The two banners used to navigate to the pull sites (will need to set those up at a later point)-->
-    <img src="images/genshin-impact-left.jpg" alt="Genshin Impact banner">
-    <img src="images/nikke-right.jpg" alt="Goddess of Victory: Nikke banner">
+    <img src="images/genshin-impact-left-4k.png" alt="Genshin Impact banner" id="genshin-img">
+    <img src="images/nikke-right-4k.jpg" alt="Goddess of Victory: Nikke banner" id="nikke-img">
 
     <input type="button" value="Coming soon..." id="genshin-button" src="src/">
     <input type="button" value="Coming soon..." id="nikke-button" src="src/">
@@ -45,7 +45,7 @@
         </p>
 
 <!-- Potentially figure out how to do a light/dark mode switch for the logo -->
-    <a href="https://github.com/SakuraJinkyu/Nikke-and-Genshin-Pulling">
+    <a name="socials" href="https://github.com/SakuraJinkyu/Nikke-and-Genshin-Pulling">
         <img id="github-dark" src="images/Github-dark-mode.jpg">
     </a>
 
