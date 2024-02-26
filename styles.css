@@ -7,19 +7,18 @@ html {
   }
 
 body {
-    max-width: 3840px;
-    max-height: 2160px;
+    max-width: 7680px;
+    max-height: 4320;
     
 }
 
 /* Images + their ID's (#genshin for left side, #nikke for right header); Look at making similar codes into classes instead */
 
 img {
-    height: 30%;
-    width: 50%;
     float: left;
 }
 
+/* Genshin header setup */
 #genshin-header {
     color: #f0f8ff; /* Alice Blue */
     position: absolute;
@@ -38,11 +37,18 @@ img {
     color: #0063b9 /* Light-dark aliceblue */
 }
 
-#genshin-img {
+#genshin-header-img {
     height: auto;
     width: 50%;
 }
 
+/* Genshin Banner */
+#genshin-img {
+    height: 900px;
+    width: 50%;
+}
+
+/* Nikke header setup */
 #nikke-header {
     color: #dc143c; /* Crimson */
     position: absolute;
@@ -59,8 +65,14 @@ img {
     color: #8f001d /* Light-dark crimson */
 }
 
-#nikke-img {
+#nikke-header-img {
     height: auto;
+    width: 50%;
+}
+
+/* Nikke Banner */
+#nikke-img {
+    height: 900px;
     width: 50%;
 }
 
