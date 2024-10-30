@@ -1,0 +1,382 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1b1f2f;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Navigation and Header Styles */
+nav {
+    width: 100%;
+    background-color: #2b2f3f;
+    padding: 10px 20px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Navigation Header Container */
+.nav-header {
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.nav-header a {
+    color: #ffde7d;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-header a:hover {
+    color: #ff8561;
+}
+
+/* Header Images */
+.header-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1600px;
+}
+
+.header-images img {
+    width: 49%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* BGM Button Styles */
+.bgm-buttons {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 10;
+}
+
+.bgm-buttons button {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bgm-buttons button:hover {
+    background-color: #ff8561;
+}
+
+/* Genshin Theme Animation */
+#button-audio-genshin.playing {
+    background-color: #61afff;
+    animation: genshinPulse 1.5s infinite alternate;
+}
+
+@keyframes genshinPulse {
+    0% {
+        box-shadow: 0 0 10px #61afff, 0 0 20px #61afff, 0 0 30px #61afff;
+    }
+
+    100% {
+        box-shadow: 0 0 20px #00aaff, 0 0 30px #00aaff, 0 0 40px #00aaff;
+    }
+}
+
+/* Nikke Theme Animation */
+#button-audio-nikke.playing {
+    background-color: #ff6f61;
+    animation: nikkePulse 1.5s infinite alternate;
+}
+
+@keyframes nikkePulse {
+    0% {
+        box-shadow: 0 0 10px #ff6f61, 0 0 20px #ff6f61, 0 0 30px #ff6f61;
+    }
+
+    100% {
+        box-shadow: 0 0 20px #ff8561, 0 0 30px #ff8561, 0 0 40px #ff8561;
+    }
+}
+
+/* Image Navigation Styles */
+#image-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+    flex-wrap: wrap;
+    /* Allow images to wrap if needed */
+}
+
+/* Container for each image */
+.image-container {
+    position: relative;
+    width: 49%;
+    /* Adjust width to make images wider */
+    max-width: 100%;
+    margin: 0;
+}
+
+/* Image Styles */
+#image-nav img {
+    width: 100%;
+    /* Ensure image fills container */
+    height: auto;
+    max-height: 60vh;
+    /* Limit height to maintain aspect ratio */
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Image Styles */
+.image-container img {
+    width: 100%;
+    /* Make image take the full width of its container */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    transition: transform 0.3s ease;
+    /* Animation for hover effect */
+}
+
+#image-nav img:hover {
+    transform: scale(1.05);
+}
+
+/* Button Styles Overlaying Images */
+#image-nav .button-container {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#genshin-button-container {
+    left: 0;
+}
+
+#nikke-button-container {
+    right: 0;
+}
+
+#image-nav input[type="button"] {
+    padding: 15px 30px;
+    background-color: #61afff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#image-nav input[type="button"]:hover {
+    background-color: #7bbfff;
+}
+
+/* Button Styles */
+#genshin-button,
+#nikke-button {
+    display: block;
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+/* Specific positioning for Genshin button */
+#genshin-button {
+    background-color: #ff9800;
+    top: 30%;
+}
+
+/* Specific positioning for Nikke button */
+#nikke-button {
+    background-color: #e91e63;
+    top: 30%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-header {
+        flex-direction: column;
+    }
+
+    .header-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-images img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #image-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #image-nav img {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #image-nav .button-container {
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #image-nav input[type="button"] {
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    .bgm-buttons {
+        top: auto;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+/* Footer Styles */
+.bottom-nav {
+    background-color: #2b2f3f;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 -3px 15px rgba(0, 0, 0, 0.5);
+}
+
+.footer-heading {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-heading:hover {
+    text-decoration: underline;
+}
+
+.footer-text {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-socials {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-social-link {
+    display: inline-block;
+}
+
+.footer-img {
+    width: 100px;
+    /* Adjust size as needed */
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+.footer-img:hover {
+    opacity: 0.8;
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+    .footer-text {
+        font-size: 14px;
+    }
+
+    .footer-socials {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-img {
+        width: 40px;
+        /* Adjust size for mobile */
+    }
+}
+
+/* Desktop-Specific Adjustments */
+@media (min-width: 1024px) {
+    .image-container {
+        width: 49%;
+        /* Set width to 49% for desktop */
+    }
+
+    #image-nav {
+        gap: 10px;
+        /* Increase space between images on desktop */
+    }
+
+    /* Ensure larger images on desktop */
+    #image-nav img {
+        max-height: 75vh;
+        /* Increase max-height for better visibility */
+    }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    #image-nav {
+        flex-direction: column;
+        /* Stack images vertically on mobile */
+    }
+
+    .image-container {
+        width: 90%;
+        /* Adjust container width for mobile */
+        margin: 10px auto;
+        /* Center containers on mobile */
+    }
+
+    #genshin-button,
+    #nikke-button {
+        width: 90%;
+        font-size: 14px;
+        top: 50%;
+        /* Adjust vertical positioning for mobile */
+    }
+}
